@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mansion Homes</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="navBar.css" />
+  </head>
+  <body>
+    <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <div class="d-flex h-100 text-center text-dark">
+        <div
+          class="nav-cover-container d-flex w-100 h-100 p-3 mx-auto flex-column"
+        >
+          <!-- Nav Bar  -->
+          <header class="mb-auto">
+            <div>
+              <a href="index.html">
+                <span>
+                  <h3 class="float-md-start mb-0">Cover</h3>
+
+                  <p class="float-md-start ms-5">
+                    <img
+                      width="15"
+                      height="15"
+                      src="https://img.icons8.com/ios/50/1A1A1A/clock--v1.png"
+                      alt="clock--v1"
+                      class="m-1"
+                    />on process
+                  </p>
+                </span>
+              </a>
+              <nav class="nav nav-masthead justify-content-center float-md-end">
+                <a
+                  class="nav-link text-dark"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+                <a class="nav-link text-dark active" href="about.html"
+                  >About US</a
+                >
+                <a class="nav-link text-dark" href="#">Booking</a>
+
+                <a class="nav-link text-dark" href="contact.html">Contact</a>
+              </nav>
+            </div>
+          </header>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="container mt-3">
+        <!-- 1st
+        
+        
+        -->
+        <div class="row align-items-center" style="min-height: 100vh">
+          <div>
+            <h1 class="h1 display-2">Welcome to BeeZone At BeeZone.xyz,</h1>
+            <p class="h4 p-3 ms-5 me-5 mb-5 font-weight-normal">
+              Hey there, future roomies! where we're all about helping college
+              students like you find your perfect pad away from home. Whether
+              you're studying hard, partying harder, or just looking for a chill
+              spot to crash, we've got the hookup for your next epic living
+              situation.
+            </p>
+          </div>
+          <div class="col-md">
+            <img src="img1.jpg" alt="" class="img-thumbnail rounded" />
+          </div>
+          <div class="col-md">
+            <h1>We didn't find it for us, so we created it for you</h1>
+            <p>
+              That's essentially our story in one sentence. Crammed up hostels
+              or cooped up PGs - not much of a choice, is it? Thats why we
+              created Stanza Living - a place designed by people who've been in
+              your shoes. Understand you. And are inspired by you.
+            </p>
+          </div>
+        </div>
+
+        <div class="row my-5">
+          <div class="col-md">
+            <h1 class="display-1">Our Mission</h1>
+          </div>
+          <div class="col-md text-lg">
+            <p>
+              At [Your Website Name], we're on a mission to make house hunting
+              as easy as acing your favorite subject. We know that finding the
+              right crib can be a real head-scratcher, so we've created a
+              kickass platform that's as simple to navigate as your favorite
+              social media feed. Say goodbye to stress and hello to the crib of
+              your dreams!
+            </p>
+          </div>
+        </div>
+
+        <!-- 2nd
+    
+    -->
+
+        <div class="row align-items-center" style="min-height: 100vh">
+          <div class="col-md">
+            <h1>We didn't find it for us, so we created it for you</h1>
+            <p>
+              That's essentially our story in one sentence. Crammed up hostels
+              or cooped up PGs - not much of a choice, is it? Thats why we
+              created Stanza Living - a place designed by people who've been in
+              your shoes. Understand you. And are inspired by you.
+            </p>
+          </div>
+          <div class="col-md order-first order-md-last">
+            <img src="img7.jpg" alt="" class="img-thumbnail rounded" />
+          </div>
+        </div>
+
+        <!-- end 
+        
+        
+        -->
+
+        <div class="row py-5">
+          <div class="col-md">
+            <h1 class="display-1">It’s uniques It’s our signature style</h1>
+          </div>
+          <div class="col-md">
+            <p>
+              That's essentially our story in one sentence. Crammed up hostels
+              or cooped up PGs - not much of a choice, is it? Thats why we
+              created Stanza Living - a place designed by people who've been in
+              your shoes. Understand you. And are inspired by you.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3rd
+    
+    
+    -->
+
+        <div
+          class="row align-items-center text-center"
+          style="min-height: 40vh"
+        >
+          <span data-aos="fade-up" data-aos-anchor-placement="top-center">
+            <h1>You moved to a new city, so we moved there too</h1>
+            <p>
+              Today, we've come a long way - from the two residences in Delhi to
+              an impressive 450+ residences in more than 24+ cities across the
+              country, and we promise we'll soon be ready to welcome you in many
+              more.
+            </p>
+          </span>
+        </div>
+
+        <!-- end -->
+        <div id="map" style="height: 400px"></div>
+      </div>
+    </main>
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-muted">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-muted">Features</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-muted">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-muted">FAQs</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-muted">About</a>
+        </li>
+      </ul>
+      <p class="text-center text-muted">© 2021 Company, Inc</p>
+    </footer>
+    <script>
+      var map = L.map("map").setView([40.7128, -74.006], 12); // Centered on New York City, zoom level 12
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      }).addTo(map);
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
